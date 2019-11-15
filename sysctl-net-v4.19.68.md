@@ -59,7 +59,7 @@ This file lists IDs for every `sysctl` variable on the system. I placed mine at 
 NET_TCP_SSTHRESH_SCALE=126,
 ```
 #### 5. Register variable in the sysctl binary ([`kernel/sysctl_binary.c`](https://elixir.bootlin.com/linux/v4.19.68/source/kernel/sysctl_binary.c#L333))
-This file maps representation numbers to profs files and data types. I added this new `sysctl` variable to the `bin_net_ipv4_table[]` list. Order does not matter here, unlike in step 4.
+This file maps representation numbers to procfs files and data types. I added this new `sysctl` variable to the `bin_net_ipv4_table[]` list. Order does not matter here, unlike in step 4.
 
 ```C
 // Register the internal ID to the procfs filename. and respective data type.
