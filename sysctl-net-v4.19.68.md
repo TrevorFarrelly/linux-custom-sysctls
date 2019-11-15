@@ -69,10 +69,9 @@ This file maps representation numbers to profs files and data types. I added thi
 #### Done!
 After a rebuild, typing `sysctl -a | grep net.ipv4.tcp_ssthresh_scale` in a terminal should return `tcp_ssthresh_scale = 20`.
 
-Updating the sysctl variable via `sysctl -w net.ipv4.tcp_ssthresh_scale=[1-100]>` should also take effect properly.
+Updating the sysctl variable via `sysctl -w net.ipv4.tcp_ssthresh_scale=[1-100]` should also take effect properly.
 
 #### Sources
-* _Adding your own sysctls_ - Vitalik Nikolyenko
-https://sar.informatik.hu-berlin.de/teaching/2012-s/2012-s%20Operating%20Systems%20Principles/lab/lab-1/sysctl_.pdf
-* _Elixir Cross Referencer_ - Bootlin
-https://elixir.bootlin.com/linux/v4.19.68/source
+* _Adding your own sysctls_ - Vitalik Nikolyenko - https://sar.informatik.hu-berlin.de/teaching/2012-s/2012-s%20Operating%20Systems%20Principles/lab/lab-1/sysctl_.pdf
+
+* _Elixir Cross Referencer_ - Bootlin - https://elixir.bootlin.com/linux/v4.19.68/source
